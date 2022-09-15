@@ -1,0 +1,90 @@
+/* reset */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* vars */
+:root{
+    --primary: #1E2D3B;
+    --secondary: #2E3A46;
+    --text: #808080;
+}
+
+/* globals */
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.container-large{
+    width: 100%; 
+    padding: 0px 30px;
+}
+
+/* header */
+header{
+    height: 60px;
+    background-color: var(--secondary);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav img{
+    width: 120px;
+}
+
+/* main */
+main{
+    height: calc(100vh - 60px);
+    background-color: var(--primary);
+    padding: 50px 0px;
+}
+
+.card-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card{
+    width: calc((100% / 5) - 15px);
+    height: 380px;
+    padding: 25px;
+    background-color: var(--secondary);
+}
+
+.card-header{
+    margin-bottom: 15px;
+}
+
+.card-header img{
+    width: 100%;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-body h3{
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.card-body p,
+.card-body small{
+    color: var(--text);
+}
+
